@@ -2,6 +2,9 @@ name: "Generator"
 on:
   workflow_dispatch:
   push:
+  schedule:
+    # every hour
+    - cron: '0 * * * *'
 
 jobs:
   Generator:
